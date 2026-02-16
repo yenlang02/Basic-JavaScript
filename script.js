@@ -64,36 +64,45 @@ function addMultiplesToArray() {
     console.log(arr);
 }
 
-// Print car object from form
+// print car object from form
 function printCarObject() {
     const carObj = {
         cType: document.getElementById("carType").value,
         cMPG: document.getElementById("carMPG").value,
         cColor: document.getElementById("carColor").value
     };
-
     console.log(carObj);
 }
 
-// Load car data into form
+// load car data into form
 function loadCar(num) {
     let selectedCar;
 
-    if (num === 1) selectedCar = carObject1;
-    else if (num === 2) selectedCar = carObject2;
-    else if (num === 3) selectedCar = carObject3;
-    else return;
+    if (num === 1) 
+        selectedCar = carObject1;
+
+    else if (num === 2) 
+        selectedCar = carObject2;
+
+    else if (num === 3) 
+        selectedCar = carObject3;
+
+    else 
+        return;
 
     document.getElementById("carType").value = selectedCar.cType;
     document.getElementById("carMPG").value = selectedCar.cMPG;
     document.getElementById("carColor").value = selectedCar.cColor;
 }
 
-// Change paragraph color
+// change paragraph color
 function changeColor(num) {
     const p = document.getElementById("styleParagraph");
 
-    if (num === 1) p.style.color = "red";
-    else if (num === 2) p.style.color = "green";
-    else if (num === 3) p.style.color = "blue";
+    if (num === 1) 
+        p.style.color = "red";
+    else if (num === 2) 
+        p.style.color = "green";
+    else if (num === 3) 
+        p.style.color = "blue";
 }
