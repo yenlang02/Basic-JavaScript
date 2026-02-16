@@ -3,26 +3,27 @@
 // Week 5: Basic JavaScript
 // February 17, 2026
 
+
 let counterValue = 0;
 
-// Update counter display
+// update counter display
 function updateCounterDisplay() {
     document.getElementById("counter").textContent = counterValue;
 }
 
-// Increase counter
+// increase counter
 function tickUp() {
     counterValue++;
     updateCounterDisplay();
 }
 
-// Decrease counter
+// decrease counter
 function tickDown() {
     counterValue--;
     updateCounterDisplay();
 }
 
-// For loop display
+// loop display
 function runForLoop() {
     let output = "";
 
@@ -33,7 +34,7 @@ function runForLoop() {
     document.getElementById("forLoopResult").textContent = output.trim();
 }
 
-// Show odd numbers
+// show odd numbers
 function showOddNumbers() {
     let output = "";
 
@@ -46,7 +47,7 @@ function showOddNumbers() {
     document.getElementById("oddNumberResult").textContent = output.trim();
 }
 
-// Multiples of 5 array reversed
+// multiples of 5 array reversed
 function addMultiplesToArray() {
     let arr = [];
 
